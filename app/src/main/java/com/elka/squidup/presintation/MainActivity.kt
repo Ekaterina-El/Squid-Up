@@ -1,4 +1,4 @@
-package com.elka.squidup
+package com.elka.squidup.presintation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
