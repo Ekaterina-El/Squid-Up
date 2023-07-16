@@ -4,8 +4,10 @@ import android.text.TextUtils
 import android.util.Patterns
 import com.elka.squidup.domain.validator.Validator
 import com.elka.squidup.other.AppError
+import javax.inject.Inject
 
-class ValidatorImpl: Validator {
+
+class ValidatorImpl @Inject constructor(): Validator {
   override fun validatePassword(password: String): AppError? {
     if (password.length < 8) return AppError.SeekPassword
     return null
